@@ -19,11 +19,52 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* ===============
+Navbar
+================*/
+
 nav {
   position: fixed;
+  min-height: 40px;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  
 }
+
+nav img {
+  height: 13px;
+  padding: 10px;
+}
+
+
+.navigation-items > * {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.category {
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  /* I feel like there should be something like "vertical-align" that would do this better */
+  vertical-align: middle;
+  height: 40px;
+}
+
+/* ==========
+Main Content
+============ */
+
+.main {
+  position: relative;
+  top: 80px;
+}
+
+
 .article-content {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
@@ -34,6 +75,79 @@ nav {
   font-weight: 700;
   padding: 15px 0 15px 0;
 }
+
+/* ==========
+Main Title
+============ */
+
+.title {
+  max-width: 500px;
+  margin: auto;
+}
+
+.title-text {
+  
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.icon-strip {
+  margin-top: 15px;
+}
+
+.icons {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.icons:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* ==========
+Hero Image
+============ */
+
+.hero {
+  position: relative;
+  top: 20px;
+  display: block;
+  width: 800px;
+  margin: auto;
+}
+
+.hero img {
+  width: 800px;
+  
+}
+
+.hero figcaption {
+  width: 700px;
+  margin-bottom: 50px;
+  color: rgb(97, 93, 93);
+}
+
+.hero figcaption span {
+  color: gray;
+  font-size: 15px;
+}
+
+
+
+/*===================
+Subscribe blurb, which interrupts the article
+=======================*/
 
 
 .subscribe-interruption {
@@ -55,6 +169,13 @@ nav {
 .subscribe-text a {
   text-decoration: none;
 }
+.subscribe-text a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+Second sub-article, with title
+=============================*/
 
 .second-title {
   max-width: 100px;
