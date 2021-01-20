@@ -19,46 +19,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* ===============
-Navbar
-================*/
-
-nav {
-  position: fixed;
-  min-height: 40px;
-  border-bottom: 1px solid lightgrey;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  
-}
-
-nav img {
-  height: 13px;
-  padding: 10px;
-}
-
-
-.navigation-items > * {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.category {
-  font-weight: 700;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  vertical-align: middle;
-  height: 40px;
-}
-
 /* ==========
 Main Content
 ============ */
 
 .main {
-  position: relative;
-  top: 80px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
+
 
 
 .article-content {
@@ -73,6 +42,83 @@ Main Content
   font-weight: 700;
   padding: 15px 0 15px 0;
 }
+
+.category {
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+}
+
+.logo img {
+  height: 25px;
+}
+
+
+/* ===============
+Navbar
+================*/
+
+nav {
+  position: fixed;
+  height: 40px;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+
+.navigation-items img {
+  height: 14px;
+}
+
+.navigation-items > * {
+  display: inline-block;
+  margin: auto 0 auto 25px;
+}
+
+nav .category {
+  position: relative;
+  bottom: 3px;
+  color: black;
+  text-decoration: none;
+}
+
+nav .icon {
+  align-self: center;
+}
+
+.account-btns a {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(47, 103, 163);
+}
+
+.account-btns {
+  padding-right: 20px;
+}
+
+.account-btns a:hover {
+  background-color:  rgb(41, 88, 138);
+}
+
+
+
 
 /* ==========
 Main Title
@@ -141,6 +187,38 @@ Hero Image
   font-size: 15px;
 }
 
+/*===================
+Article Info
+=======================*/
+
+.info {
+  max-width: 500px;
+  margin: 50px auto 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.author {
+  font-weight: 550;
+}
+
+.author span {
+  border-bottom: 1px solid lightgray;
+}
+
+.author span:hover {
+  border: none;
+}
+
+.author a {
+  color: black;
+  text-decoration: none;
+}
+
+.date {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 
 
 /*===================
@@ -177,12 +255,13 @@ Theory Of Inflation infographic section
 
 .inflation {
   width: 900px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto;
 }
 
 .inflation h2 {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .inflation p {
@@ -302,3 +381,131 @@ South Pole figure
 .pole figcaption {
   color: rgb(97, 93, 93);
 }
+
+/*===================
+Footer
+=======================*/
+
+
+/* General Footer styles */
+footer {
+  width: 93%;
+  margin: auto;
+}
+
+
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;  
+}
+
+/* Footer Banner */
+
+.footer-banner {
+  margin-bottom: 10px;
+  padding: 1px 0 5px 0;
+  border-top: 2px solid lightgray;
+}
+
+.extra-border {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+.explicit-link {
+  float: right;
+  font-size: 12px;
+  color: rgb(140, 156, 179)
+}
+
+.explicit-link:hover {
+  cursor:pointer;
+}
+
+
+
+
+
+/* Main Footer menu */
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 350;
+  margin-bottom: 10px;
+}
+.footer-menu > * {
+  padding: 0 40px 0 0;
+}
+.footer-menu li {
+  padding-bottom: 5px;
+  width: auto;
+  white-space: nowrap;
+}
+
+/* Footer Sidebar */
+
+.menu-sidebar {
+  border-left: 1px solid lightgray;
+  padding-left: 20px;
+}
+
+.menu-subscribe-links {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.menu-subscribe-links li {
+  padding-bottom: 10px;
+}
+
+.lesser-subscribe-links {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.lesser-sidebar {
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+
+/* Bottom Navbar */
+.very-bottom-menu {
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+}
+
+.very-bottom-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.very-bottom-menu li {
+  padding: 0 5px;
+}
+
+.very-bottom-menu a {
+  color: gray;
+  font-size: 12px;
+}
+
+
+
+
+
